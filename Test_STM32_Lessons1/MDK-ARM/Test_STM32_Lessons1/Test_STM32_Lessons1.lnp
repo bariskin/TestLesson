@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"test_stm32_lessons1\startup_stm32f407xx.o"
+"test_stm32_lessons1\main.o"
+"test_stm32_lessons1\gpio.o"
+"test_stm32_lessons1\stm32f4xx_it.o"
+"test_stm32_lessons1\stm32f4xx_hal_msp.o"
+"test_stm32_lessons1\stm32f4xx_hal_tim.o"
+"test_stm32_lessons1\stm32f4xx_hal_tim_ex.o"
+"test_stm32_lessons1\stm32f4xx_hal_rcc.o"
+"test_stm32_lessons1\stm32f4xx_hal_rcc_ex.o"
+"test_stm32_lessons1\stm32f4xx_hal_flash.o"
+"test_stm32_lessons1\stm32f4xx_hal_flash_ex.o"
+"test_stm32_lessons1\stm32f4xx_hal_flash_ramfunc.o"
+"test_stm32_lessons1\stm32f4xx_hal_gpio.o"
+"test_stm32_lessons1\stm32f4xx_hal_dma_ex.o"
+"test_stm32_lessons1\stm32f4xx_hal_dma.o"
+"test_stm32_lessons1\stm32f4xx_hal_pwr.o"
+"test_stm32_lessons1\stm32f4xx_hal_pwr_ex.o"
+"test_stm32_lessons1\stm32f4xx_hal_cortex.o"
+"test_stm32_lessons1\stm32f4xx_hal.o"
+"test_stm32_lessons1\stm32f4xx_hal_exti.o"
+"test_stm32_lessons1\system_stm32f4xx.o"
+--strict --scatter "Test_STM32_Lessons1\Test_STM32_Lessons1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Test_STM32_Lessons1.map" -o Test_STM32_Lessons1\Test_STM32_Lessons1.axf
