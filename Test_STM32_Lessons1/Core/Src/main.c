@@ -94,11 +94,11 @@ int main(void)
   {
     /* USER CODE END WHILE */
 		
-		  HAL_GPIO_WritePin(LED_0_GPIO_Port, LED_0_Pin, GPIO_PIN_SET);
+		  HAL_GPIO_WritePin(LED_0_GPIO_Port, LED_0_Pin, GPIO_PIN_RESET);
 		
 		  HAL_Delay(1500); //ms
 		
-		  HAL_GPIO_WritePin(LED_0_GPIO_Port, LED_0_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(LED_0_GPIO_Port, LED_0_Pin, GPIO_PIN_SET);
 		
 		  HAL_Delay(1500);  //ms
 
